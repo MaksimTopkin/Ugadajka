@@ -1,0 +1,128 @@
+
+/* Fonts *******************/
+
+body {
+	font: 17pt Arial, sans-serif;
+}
+
+.gameTitle {
+	font-size: 150%;
+}
+
+.main {
+	font-size: 170%;
+	text-align: center;
+
+}
+
+.startBtn, .DBbutton {
+	font-size: 12pt;
+}
+
+.titleBtn {
+	font-size: 12pt;
+}
+
+.version {
+	font-size: 8pt;
+}
+
+
+
+/* Colors ******************/
+
+html {
+	background: #f2f2f2;
+}
+
+body {
+	background: #f2f2f2;
+}
+
+.title, #gameFlowBlockHolder {
+		border: 1px;
+		width: 100%; max-width: 650px;
+  		margin: 1em auto; padding: 1em; border: 1px solid rgb(100,100,100);
+  		box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
+}
+
+.main {
+
+ 
+}
+
+.answerR {
+	color: #5bc208;
+}
+
+.answerW {
+	color: red;
+}
+
+#cheatFld {
+	color: #2100db;
+}
+
+
+
+/* Misc ******************/
+
+#cheatFld{
+	transition: 1s;
+	opacity: 0;
+}
+
+.cheat{
+	opacity: 1;
+}
+
+.cheat:hover + #cheatFld{
+	transition: 1s;
+	opacity: 1;
+}
+
+.ansBtn:hover, .titleBtn:hover, .startBtn:hover, .DBbutton:hover {
+	background: #696969;
+	color: #f2f2f2;
+}
+
+body, #gameFlowBlockHolder, .main, .cheat, #startBtn {
+ animation-name: appear ;
+ animation-duration: 1s;
+}
+
+.question, .input, .ansBtn {
+	 animation-name: appear ;
+ 	 animation-duration: 0.5s;
+}
+
+@keyframes appear {
+ 0% {opacity: 0;}
+ 10% {opacity: 0.1;}
+ 20% {opacity: 0.2;}
+ 30% {opacity: 0.3;}
+ 40% {opacity: 0.4;}
+ 50% {opacity: 0.5;}
+ 60% {opacity: 0.6;}
+ 70% {opacity: 0.7;}
+ 80% {opacity: 0.8;}
+ 90% {opacity: 0.9;}
+ 100% {opacity: 1;}
+}
+
+#endGame {
+	margin-top: 25px;			
+}
+
+.titleBtn, .startBtn, .ansBtn, .cheat, .DBbutton {
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.ansBtn {
+	padding: 5px;
+}
+
+.fromDBanswer {
+	border-bottom: 2px dotted black;
+}
